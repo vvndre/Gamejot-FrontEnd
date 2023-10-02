@@ -25,7 +25,7 @@ function GamesList() {
 
   const getGames = () => {
     axios
-      .get("http://localhost:3000/gamejot")
+      .get("https://gamejot-backend.onrender.com/gamejots")
       .then((res) => {
         // console.log(res.data)
         setGamesList(res.data);

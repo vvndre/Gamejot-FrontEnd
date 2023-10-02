@@ -31,7 +31,7 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/register", {
+      .post("https://gamejot-backend.onrender.com/register", {
         username: state.username,
         email: state.email,
         password: state.password,
@@ -107,7 +107,7 @@ function Register() {
               },
             }}
           >
-            Sign In
+            Register
           </Button>
           <Grid
             container

@@ -33,7 +33,7 @@ function Login(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/login", {
+      .post("https://gamejot-backend.onrender.com/login", {
         email: state.email,
         password: state.password,
       })
