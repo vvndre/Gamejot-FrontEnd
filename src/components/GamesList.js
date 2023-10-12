@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function GamesList() {
   const [gamesList, setGamesList] = useState([]);
@@ -43,10 +44,17 @@ function GamesList() {
   console.log(gamesApiList);
 
   return (
+    // Create Cards
     <div>
-      {gamesList.map((game) => (
-        <div key={game.post_id}>
-          <p>{game.game_title}</p>
+      {gamesApiList.map((game) => (
+        <div key={game.id}>
+          <img
+            alt={game.slug}
+            src={game.background_image}
+            style={{ width: "200px" }}
+          />
+          <p>{game.name}</p>
+          <Link to="/add-game">Add to My List</Link>
         </div>
       ))}
     </div>

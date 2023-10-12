@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import { Navigate } from "react-router-dom";
 import cookie from "cookie";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Dashboard from "./pages/Dashboard"
+import AddGame from "./pages/AddGame";
 
 const checkAuth = () => {
   const cookies = cookie.parse(document.cookie);
@@ -49,10 +52,14 @@ function Router() {
         />
         <Route element={<Register />} path="/register" />
         <Route
-          element={<ProtectedRoute component={GamesList} />}
-          path="/gameslist"
+          element={<ProtectedRoute component={Dashboard} />}
+          path="/dashboard"
         />
+        <Route
+        element={<ProtectedRoute component={AddGame} />}
+        path="/add-game" />
       </Routes>
+      <Footer />
     </>
   );
 }

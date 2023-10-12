@@ -1,8 +1,9 @@
 import React from 'react'
+import GamesList from '../components/GamesList'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <GamesList />
   )
 }
 

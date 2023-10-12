@@ -46,7 +46,7 @@ function Login(props) {
         //calling prop
         setIsLoggedIn(true);
 
-        navigate("/gameslist");
+        navigate("/dashboard");
       })
       .catch((err) => {
         console.log(err.message);
@@ -58,6 +58,7 @@ function Login(props) {
       <Box
         sx={{
           marginTop: 8,
+          minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
