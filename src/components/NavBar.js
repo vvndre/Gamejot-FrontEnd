@@ -48,9 +48,13 @@ export default function NavBar(props) {
             </a>
           </Toolbar>
           {isLoggedIn ? (
-            <Button onClick={handleLogout} href="/" color="inherit">
-              Logout
-            </Button>
+            <>
+              <Button href="/dashboard" color="inherit">Dashboard</Button>
+              <Button href="/gamejots" color="inherit">My Gamejots</Button>
+              <Button onClick={handleLogout} href="/" >
+                Logout
+              </Button>
+            </>
           ) : (
             <Button href="/login" color="inherit">
               Login

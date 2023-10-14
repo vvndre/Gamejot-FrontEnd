@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Paper, Grid, Box } from "@mui/material";
+import { experimentalStyled as styled } from "@mui/material/styles";
+
+const Item = styled(Paper)(({ theme }) => ({
+  padding: theme.spacing(2),
+  textAlign: "center",
+  borderRadius: "15px",
+  color: theme.palette.text.secondary,
+}));
 
 function GamesList() {
   const [gamesList, setGamesList] = useState([]);
@@ -40,24 +49,36 @@ function GamesList() {
     getGames();
     fetchGames();
   }, []);
-  console.log(gamesList);
-  console.log(gamesApiList);
+  // console.log(gamesList);
+  // console.log(gamesApiList);
 
   return (
-    // Create Cards
-    <div>
-      {gamesApiList.map((game) => (
-        <div key={game.id}>
-          <img
-            alt={game.slug}
-            src={game.background_image}
-            style={{ width: "200px" }}
-          />
-          <p>{game.name}</p>
-          <Link to="/add-game">Add to My List</Link>
-        </div>
-      ))}
-    </div>
+    <Box sx={{ flexGrow: 1, p: 2 }}>
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+        direction="row"
+        alignItems="center"
+        justifyContent="space-between"
+      >
+        {gamesApiList.map((game) => (
+          <Grid item xs={2} sm={4} md={4} key={game.id} sx={{ maxWidth: 345 }}>
+            <Item>
+              <img
+                src={game.background_image}
+                alt="{game.slug}"
+                height="150px"
+                width="300px"
+                maxWidth="100%"
+              />
+              <h4>{game.name}</h4>
+              <Link to="/add-game">Add to My Gamejots</Link>
+            </Item>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 }
 

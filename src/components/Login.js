@@ -43,6 +43,7 @@ function Login(props) {
         document.cookie = cookie.serialize("loggedIn", "true", {
           maxAge: 600000,
         });
+        document.cookie = cookie.serialize("token", res.data);
         //calling prop
         setIsLoggedIn(true);
 
