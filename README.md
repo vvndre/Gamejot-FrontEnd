@@ -4,15 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To-Dos
 
-[X] Create Homepage
-[X] Create Login/Register Authentication
-  (x) Login -> Logout Buttons
-[X] Implement RAWG Api
-[X] Create Footer Component
-[] Create Dashboard Page
-  () Posts Gamejots
-  () Views Gamejots
-  () Delete Gamejots
+[X] Create Homepage \
+[X] Create Login/Register Authentication \
+  (x) Login -> Logout Buttons \
+[X] Implement RAWG Api \
+[X] Create Footer Component \
+[] Create Dashboard Page \
+  () Posts Gamejots \
+  () Views Gamejots \
+  () Delete Gamejots \
 
 ## Available Scripts
 

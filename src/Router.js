@@ -57,7 +57,7 @@ function Router() {
         />
         <Route
         element={<ProtectedRoute component={AddGame} />}
-        path="/add-game" />
+        path="/add-game/:id" />
         <Route
         element={<ProtectedRoute component={MyGames} />}
         path="/gamejots" />

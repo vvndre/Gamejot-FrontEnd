@@ -49,7 +49,6 @@ function GamesList() {
     getGames();
     fetchGames();
   }, []);
-  // console.log(gamesList);
   // console.log(gamesApiList);
 
   return (
@@ -73,7 +72,7 @@ function GamesList() {
                 maxWidth="100%"
               />
               <h4>{game.name}</h4>
-              <Link to="/add-game">Add to My Gamejots</Link>
+              <Link to={`/add-game/${game.id}`}>Add to My Gamejots</Link>
             </Item>
           </Grid>
         ))}
