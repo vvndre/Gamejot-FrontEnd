@@ -11,6 +11,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import CardMedia from "@mui/material/CardMedia";
 import axios from "axios";
 import cookie from "cookie";
 
@@ -83,6 +84,16 @@ function GameForm(props) {
         <Avatar sx={{ m: 1, bgcolor: "#F0EEE7" }}>
           <GamesIcon />
         </Avatar>
+        <CardMedia
+          component="img"
+          height="160vh"
+          image={gameDetails?.background_image}
+          alt="Game Background"
+          sx={{
+            borderRadius: "10px", // Adjust Border
+            marginTop: 2,
+          }}
+        />
         <Box component="form" sx={{ mt: 1 }} onSubmit={submitPost}>
           <TextField
             margin="normal"
