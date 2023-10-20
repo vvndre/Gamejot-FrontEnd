@@ -9,7 +9,6 @@ import Logo from "../images/Logos/gamejot-7.png";
 import cookie from "cookie";
 
 export default function NavBar(props) {
-  // console.log(props)
   const { setIsLoggedIn, isLoggedIn } = props;
   const cookies = cookie.parse(document.cookie);
   console.log(cookies.loggedIn);

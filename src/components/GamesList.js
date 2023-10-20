@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { Paper, Grid, Box } from "@mui/material";
-import { experimentalStyled as styled } from "@mui/material/styles";
-
-const Item = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(2),
-  textAlign: "center",
-  borderRadius: "15px",
-  color: theme.palette.text.secondary,
-}));
+import { Link as RouterLink } from "react-router-dom";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  Typography,
+  Grid,
+  Box,
+} from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 function GamesList() {
+  // eslint-disable-next-line
   const [gamesList, setGamesList] = useState([]);
   const [gamesApiList, setGamesApiList] = useState([]);
+
+  const theme = useTheme();
 
   const fetchGames = async () => {
     let maxPageSize = 5;
@@ -37,7 +40,6 @@ function GamesList() {
     axios
       .get("https://gamejot-backend.onrender.com/gamejots")
       .then((res) => {
-        // console.log(res.data)
         setGamesList(res.data);
       })
       .catch((error) => {
@@ -63,17 +65,33 @@ function GamesList() {
       >
         {gamesApiList.map((game) => (
           <Grid item xs={2} sm={4} md={4} key={game.id} sx={{ maxWidth: 345 }}>
-            <Item>
-              <img
-                src={game.background_image}
-                alt="{game.slug}"
-                height="150px"
-                width="300px"
-                maxWidth="100%"
-              />
-              <h4>{game.name}</h4>
-              <Link to={`/add-game/${game.id}`}>Add to My Gamejots</Link>
-            </Item>
+            <Card sx={{ borderRadius: "15px" }}>
+              <CardActionArea
+                component={RouterLink}
+                to={`/add-game/${game.id}`}
+                sx={{
+                  padding: theme.spacing(2),
+                  textAlign: "center",
+                  color: theme.palette.text.secondary,
+                }}
+              >
+                <img
+                  src={game.background_image}
+                  alt="{game.slug}"
+                  height="165px"
+                  width="300px"
+                  style={{ maxWidth: "100%" }}
+                />
+                <CardContent>
+                  <Typography variant="h5" component="div">
+                    {game.name}
+                  </Typography>
+                  <Typography variant="p" component="div" color="#9E6305">
+                    Add to My Gamejots
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
           </Grid>
         ))}
       </Grid>

@@ -65,6 +65,7 @@ function GameForm(props) {
 
   useEffect(() => {
     getGameDetails();
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -91,7 +92,7 @@ function GameForm(props) {
           alt="Game Background"
           sx={{
             borderRadius: "10px", // Adjust Border
-            marginTop: 2,
+            marginTop: 1,
           }}
         />
         <Box component="form" sx={{ mt: 1 }} onSubmit={submitPost}>
