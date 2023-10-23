@@ -105,6 +105,7 @@ function GameForm(props) {
             value={gameDetails?.name}
             InputProps={{
               readOnly: true,
+              style: { pointerEvents: "none" },
             }}
           />
           <TextField
@@ -116,6 +117,7 @@ function GameForm(props) {
             value={gameDetails?.released.slice(0, 4)}
             InputProps={{
               readOnly: true,
+              style: { pointerEvents: "none" },
             }}
           />
           <TextField
@@ -127,6 +129,7 @@ function GameForm(props) {
             value={gameDetails?.developers[0].name}
             InputProps={{
               readOnly: true,
+              style: { pointerEvents: "none" },
             }}
           />
           <FormControl
@@ -136,7 +139,12 @@ function GameForm(props) {
             }}
           >
             <InputLabel>Status</InputLabel>
-            <Select label="Status" onChange={handleChange} value={status}>
+            <Select
+              label="Status"
+              onChange={handleChange}
+              value={status}
+              required
+            >
               <MenuItem value="watchlist">Watchlist</MenuItem>
               <MenuItem value="started">Started</MenuItem>
               <MenuItem value="completed">Completed</MenuItem>

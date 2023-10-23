@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [X] Implement RAWG Api \
 [X] Create Footer Component \
 [] Create Dashboard Page \
-  () Posts Gamejots \
+  (x) Posts Gamejots \
   () Views Gamejots \
   () Delete Gamejots \
 
