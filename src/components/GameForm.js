@@ -43,6 +43,7 @@ function GameForm(props) {
     game_year: gameDetails?.released.slice(0, 4),
     game_dev: gameDetails?.developers[0].name,
     status: status,
+    game_id: gameApiId,
   };
 
   const submitPost = (e) => {

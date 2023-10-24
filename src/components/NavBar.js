@@ -20,8 +20,12 @@ export default function NavBar(props) {
     setIsLoggedIn(false);
   };
 
+  const styles = {
+    fontFamily: '"Neue Haas Bold", sans-serif',
+  };
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, ...styles }}>
       <AppBar position="static" sx={{ bgcolor: "#20232A" }}>
         <Toolbar>
           <IconButton
@@ -48,9 +52,13 @@ export default function NavBar(props) {
           </Toolbar>
           {isLoggedIn ? (
             <>
-              <Button href="/dashboard" color="inherit">Dashboard</Button>
-              <Button href="/gamejots" color="inherit">My Gamejots</Button>
-              <Button onClick={handleLogout} href="/" >
+              <Button href="/dashboard" color="inherit">
+                Dashboard
+              </Button>
+              <Button href="/gamejots" color="inherit">
+                My Gamejots
+              </Button>
+              <Button onClick={handleLogout} href="/">
                 Logout
               </Button>
             </>
