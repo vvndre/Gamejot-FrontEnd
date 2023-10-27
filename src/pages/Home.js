@@ -43,35 +43,41 @@ const Home = () => {
   return (
     <div style={containerStyles}>
       <div style={contentStyles}>
-        <Box sx={{ mt: 1 }}>
+        <Box sx={{ mt: 0.5 }}>
           <Typography
             sx={{
+              fontFamily: "Pilat Bold",
               textShadow:
-                "4px 2px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px rgba(0, 0, 0, 0.25)",
+                "4px 2px 4px black, -2px -2px 4px rgba(0, 0, 0, 0.25)",
+              fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
             }}
             variant="h3"
             color="inherit"
             noWrap
             style={headerStyles}
           >
-            Track Games you've played
+            Track Games you've played.
           </Typography>
           <Typography
             sx={{
+              fontFamily: "Pilat Bold",
               textShadow:
-                "4px 2px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px rgba(0, 0, 0, 0.25)",
+                "4px 2px 4px black, -2px -2px 4px rgba(0, 0, 0, 0.25)",
+              fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
             }}
             variant="h3"
             color="inherit"
             noWrap
             style={headerStyles}
           >
-            Save those you want to play
+            Save those you want to play.
           </Typography>
           <Typography
             sx={{
+              fontFamily: "Pilat Bold",
               textShadow:
-                "4px 2px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px rgba(0, 0, 0, 0.25)",
+                "4px 2px 4px black, -2px -2px 4px rgba(0, 0, 0, 0.25)",
+              fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
             }}
             variant="h3"
             color="inherit"
@@ -82,6 +88,9 @@ const Home = () => {
           </Typography>
           <Button
             sx={{
+              fontFamily: "Pilat Bold",
+              textShadow:
+                "4px 2px 4px black, -2px -2px 4px rgba(0, 0, 0, 0.25)",
               mt: 2,
               mb: 4,
               paddingY: 1.6,
@@ -90,6 +99,8 @@ const Home = () => {
                 bgcolor: "#BD9066", // theme.palette.primary.main
                 color: "white",
               },
+              fontSize: "1.2rem", // Fixed font size for the text
+              padding: { xs: "15px 40px", sm: "15px 60px", md: "15px 80px" },
             }}
             variant="contained"
             fullWidth

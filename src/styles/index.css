@@ -27,9 +27,8 @@ code {
 }
 
 @font-face {
-  font-family: "Redaction Bold";
-  src: url("../fonts/Redaction_2_001/webfonts/Redaction_70-Bold.woff2")
-    format("woff2");
+  font-family: "Pilat Bold";
+  src: url("../fonts/PilatExtended-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
