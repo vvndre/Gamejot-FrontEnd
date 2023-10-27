@@ -28,7 +28,7 @@ export default function NavBar(props) {
     <Box sx={{ flexGrow: 1, ...styles }}>
       <AppBar position="static" sx={{ bgcolor: "#20232A" }}>
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -36,7 +36,7 @@ export default function NavBar(props) {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Toolbar sx={{ flexGrow: 1 }}>
             <a href="/">
               <Box

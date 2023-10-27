@@ -51,7 +51,6 @@ function GamesList() {
     getGames();
     fetchGames();
   }, []);
-  console.log(gamesApiList);
 
   return (
     <Box sx={{ flexGrow: 1, p: 2 }}>

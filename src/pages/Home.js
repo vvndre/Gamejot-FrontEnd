@@ -82,8 +82,9 @@ const Home = () => {
           </Typography>
           <Button
             sx={{
-              mt: 3,
-              mb: 2,
+              mt: 2,
+              mb: 4,
+              paddingY: 1.6,
               bgcolor: "#9E6305",
               ":hover": {
                 bgcolor: "#BD9066", // theme.palette.primary.main

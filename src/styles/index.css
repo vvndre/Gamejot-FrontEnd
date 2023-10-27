@@ -14,15 +14,15 @@ code {
 
 @font-face {
   font-family: "Neue Haas Bold";
-  src: url("../fonts/Neue\ Haas/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
+  src: url("../fonts/Neue Haas/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Redaction 35";
-  src: url("../fonts/Redaction_2_001/OTF/Redaction35-Regular.otf")
-    format("opentype");
+  font-family: "Redaction Bold";
+  src: url("../fonts/Redaction_2_001/webfonts/Redaction_35-Bold.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }

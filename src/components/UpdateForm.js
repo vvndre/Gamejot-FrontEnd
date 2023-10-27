@@ -51,7 +51,7 @@ function UpdateForm(props) {
   const submitPost = (e) => {
     e.preventDefault();
     const cookies = cookie.parse(document.cookie);
-    console.log(cookies.token);
+    // console.log(cookies.token);
     axios
       .put(
         `https://gamejot-backend.onrender.com/gamejots/${gameApiId}`,
@@ -78,7 +78,7 @@ function UpdateForm(props) {
     );
     if (confirmDelete) {
       const cookies = cookie.parse(document.cookie);
-      console.log(cookies.token);
+      // console.log(cookies.token);
       axios
         .delete(`https://gamejot-backend.onrender.com/gamejots/${gameApiId}`, {
           headers: {
@@ -191,7 +191,7 @@ function UpdateForm(props) {
               mb: 1,
               bgcolor: "#9E6305",
               ":hover": {
-                bgcolor: "#BD9066", // theme.palette.primary.main
+                bgcolor: "#BD9066",
                 color: "white",
               },
             }}

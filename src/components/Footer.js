@@ -12,7 +12,6 @@ export default function Footer() {
         marginTop: "auto",
         bottom: 0,
         position: "relative",
-        // paddingTop: "3rem",
       }}
       component="footer"
     >

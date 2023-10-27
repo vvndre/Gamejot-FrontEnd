@@ -14,7 +14,6 @@ import { useNavigate } from "react-router-dom";
 import cookie from "cookie";
 
 function Login(props) {
-  //console.log(props)
   const { setIsLoggedIn } = props;
   const navigate = useNavigate();
   const [state, setState] = useState({
@@ -101,7 +100,7 @@ function Login(props) {
               mb: 2,
               bgcolor: "#9E6305",
               ":hover": {
-                bgcolor: "#BD9066", // theme.palette.primary.main
+                bgcolor: "#BD9066",
                 color: "white",
               },
             }}

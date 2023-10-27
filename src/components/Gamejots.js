@@ -26,7 +26,6 @@ function Gamejots(props) {
     axios
       .get(`https://api.rawg.io/api/games/${game.game_id}?key=${apiKey}`)
       .then((res) => {
-        // console.log(res.data);
         setGameDetails(res.data);
       })
       .catch((error) => {
@@ -37,7 +36,6 @@ function Gamejots(props) {
   useEffect(() => {
     getGameDetails();
   }, []);
-  // console.log(gameDetails);
 
   return (
     <Grid item xs={2} sm={4} md={4} sx={{ maxWidth: 345 }}>
