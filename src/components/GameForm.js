@@ -14,11 +14,13 @@ import Select from "@mui/material/Select";
 import CardMedia from "@mui/material/CardMedia";
 import axios from "axios";
 import cookie from "cookie";
+import { useNavigate } from "react-router-dom";
 
 function GameForm(props) {
   const [status, setStatus] = useState("");
   const [gameDetails, setGameDetails] = useState();
   const { gameApiId } = props;
+  const navigate = useNavigate();
 
   const getGameDetails = () => {
     let apiKey = process.env.REACT_APP_APIKEY;
@@ -58,6 +60,7 @@ function GameForm(props) {
       })
       .then((res) => {
         console.log(res);
+        navigate("/gamejots");
       })
       .catch((error) => {
         console.log(error.message);

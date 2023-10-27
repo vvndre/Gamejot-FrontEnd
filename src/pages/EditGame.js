@@ -8,7 +8,7 @@ function EditGame() {
 
   return (
     <>
-      <UpdateForm />
+      <UpdateForm gameApiId={id} />
     </>
   );
 }

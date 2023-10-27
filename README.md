@@ -6,13 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [X] Create Homepage \
 [X] Create Login/Register Authentication \
-  (x) Login -> Logout Buttons \
+ (x) Login -> Logout Buttons \
 [X] Implement RAWG Api \
 [X] Create Footer Component \
-[] Create Dashboard Page \
-  (x) Posts Gamejots \
-  () Views Gamejots \
-  () Delete Gamejots \
+[X] Create Dashboard Page \
+ (x) Posts Gamejots \
+ (x) Views Gamejots \
+ (x) Updates Gamejots \
+ (x) Delete Gamejots \
 
 ## Available Scripts
 
