@@ -111,7 +111,7 @@ function UpdateForm(props) {
           alignItems: "center",
         }}
       >
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" sx={{ fontFamily: "Neue Haas Bold" }}>
           Edit Game
         </Typography>
         <Avatar sx={{ m: 1, bgcolor: "#F0EEE7" }}>
@@ -196,7 +196,7 @@ function UpdateForm(props) {
               },
             }}
           >
-            Update Edit
+            Update Status
           </Button>
           <Button
             type="button"

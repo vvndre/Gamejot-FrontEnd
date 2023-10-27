@@ -83,7 +83,11 @@ function GameForm(props) {
           alignItems: "center",
         }}
       >
-        <Typography component="h1" variant="h5">
+        <Typography
+          component="h1"
+          variant="h5"
+          sx={{ fontFamily: "Neue Haas Bold" }}
+        >
           Add Game
         </Typography>
         <Avatar sx={{ m: 1, bgcolor: "#F0EEE7" }}>

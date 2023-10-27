@@ -82,10 +82,14 @@ function GamesList() {
                   style={{ maxWidth: "100%" }}
                 />
                 <CardContent>
-                  <Typography variant="h5" component="div">
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    sx={{ fontFamily: "Neue Haas Bold", mb: 1 }}
+                  >
                     {game.name}
                   </Typography>
-                  <Typography variant="p" component="div" color="#9E6305">
+                  <Typography variant="p" component="div" color="#9E6305" sx={{fontFamily: "Neue Haas Reg"}}>
                     Add to My Gamejots
                   </Typography>
                 </CardContent>

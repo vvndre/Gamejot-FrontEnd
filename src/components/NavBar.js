@@ -21,12 +21,12 @@ export default function NavBar(props) {
   };
 
   const styles = {
-    fontFamily: '"Neue Haas Bold", sans-serif',
+    fontFamily: 'Neue Haas Bold, sans-serif',
   };
 
   return (
-    <Box sx={{ flexGrow: 1, ...styles }}>
-      <AppBar position="static" sx={{ bgcolor: "#20232A" }}>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" sx={{ bgcolor: "#20232A", ...styles }}>
         <Toolbar>
           {/* <IconButton
             size="large"

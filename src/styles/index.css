@@ -20,8 +20,15 @@ code {
 }
 
 @font-face {
+  font-family: "Neue Haas Reg";
+  src: url("../fonts/Neue Haas/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Redaction Bold";
-  src: url("../fonts/Redaction_2_001/webfonts/Redaction_35-Bold.woff2")
+  src: url("../fonts/Redaction_2_001/webfonts/Redaction_70-Bold.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;

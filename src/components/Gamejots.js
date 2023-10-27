@@ -57,13 +57,22 @@ function Gamejots(props) {
             style={{ maxWidth: "100%" }}
           />
           <CardContent>
-            <Typography variant="h5" component="div">
+            <Typography
+              variant="h5"
+              component="div"
+              sx={{ fontFamily: "Neue Haas Bold" }}
+            >
               {gameDetails?.name}
             </Typography>
             <Typography variant="h6" component="div">
               {upperStatus}
             </Typography>
-            <Typography variant="p" component="div" color="#9E6305">
+            <Typography
+              variant="p"
+              component="div"
+              color="#9E6305"
+              sx={{ fontFamily: "Neue Haas Reg" }}
+            >
               Edit My Gamejot
             </Typography>
           </CardContent>
