@@ -84,7 +84,7 @@ const Home = () => {
             noWrap
             style={headerStyles}
           >
-            The Social Network for Gamers!
+            The Ultimate Gamer Library!
           </Typography>
           <Button
             sx={{
