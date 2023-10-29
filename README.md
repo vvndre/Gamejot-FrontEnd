@@ -1,10 +1,11 @@
-# Frontend for Gamejot
+# Gamejot
 
 GameJot is a platform designed for gamers to track and manage their gaming experiences. It allows users to keep a record of the games they have played, the ones they wish to play, and their gaming achievements. GameJot aims to enhance the gaming experience by providing a comprehensive tool for organizing and exploring the world of gaming.
 
 Overall, Gamejot is designed to help users manage their gaming experiences effectively, allowing them to organize and keep track of their gaming activities in a user-friendly and visually appealing manner.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+And also uses the [Rawg.io Api](https://api.rawg.io/docs/).
 
 ## Backend for Gamejot
 
